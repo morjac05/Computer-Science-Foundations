@@ -1,0 +1,12 @@
+Grader Name: Micah Stringham
+Login: Strmic 29
+October 10th, 2013
+
+I learned that you can assign a varible as a set, that is a set of functions, 
+not just a set of varibles. One just uses brackets and commas. Nice work on that!
+
+(3/3) 
+
+could have more user friendly comments but really everthing looks great!
+
+~Micahangelo
