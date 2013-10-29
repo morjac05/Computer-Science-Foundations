@@ -19,20 +19,26 @@ Problem 1:
 
 Problem 2:
 
-...
+GC-content: 0.43029262963
 
 Problem 3:
 
-...
+When the lines 'seq=""' and 'linenum=0' are commented out, the program returns an error, because the variable "linenum" is not defined when it is encountered and called. If linenum were left in, it would instead encounter an error later when it attempts to call "seq", which is also not defined due to being commented out.
+
+When the program finds a G or a C and attempts to increment the value of "gc_count" as such, it cannot because commenting out the initial value of "gc_count" causes it to not be defined.
 
 Problem 4:
 
-...
+AT-content=0.7
 
 Collaboration:
 
-...
+I work alone.
+
+Like Batman.
+
+(I'm Batman.)
 
 Reflection:
 
-...
+I learned how to run a Python program from the command line. I plan to study the dna_analysis.py program further until I comprehend exactly how all parts of it work.
