@@ -54,6 +54,10 @@ total_count = 0
 # Number of G and C nucleotides seen so far.
 gc_count = 0
 at_count = 0
+g_count = 0
+c_count = 0
+a_count = 0
+t_count = 0
 
 
 # for each base pair in the string,
@@ -65,14 +69,35 @@ for bp in seq:
     if bp == 'C' or bp == 'G':
         # increment the count of gc
         gc_count = gc_count + 1
-    if bp == 'A' or bp == 'T':
+    elif bp == 'A' or bp == 'T':
         #increment the count of at
         at_count = at_count + 1
 
-
+for bp in seq:
+    if bp == 'G':
+        #increment the count of g
+        g_count = g_count + 1
+    elif bp == 'C':
+        #increment the count of c
+        c_count = c_count + 1
+    elif bp == 'A':
+        #increment the count of a
+        a_count = a_count + 1
+    elif bp == 'T':
+        #increment the count of t
+        t_count = t_count + 1
+    
 # divide the gc_count by the total_count
 gc_content = float(gc_count) / total_count
 at_content = float(at_count) / total_count
 # Print the answer
-print 'GC-content:', gc_content
-print 'AT-content:', at_content
+#print 'GC-content:', gc_content
+#print 'AT-content:', at_content
+#print 'G count:', g_count
+#print 'C count:', c_count
+#print 'A count:', a_count
+#print 'T count:', t_count
+
+print 'Sum of base pairs:', a_count + t_count + g_count + c_count
+print 'Total count:', total_count
+print 'Sequence length:', len(seq)
